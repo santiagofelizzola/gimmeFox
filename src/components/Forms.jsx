@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
+import './Fox.css';
 
 const Forms = () => {
 
@@ -38,7 +39,7 @@ const Forms = () => {
 
     return (
         <>
-
+            <img id='foxIMG' src='/src/assets/fox.png' />
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email Address</Form.Label>
