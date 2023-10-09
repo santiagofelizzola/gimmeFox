@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import './Fox.css';
+import foxPNG from '../assets/fox.png'
 
 const Forms = () => {
 
@@ -39,7 +40,7 @@ const Forms = () => {
 
     return (
         <>
-            <img id='foxIMG' src='/src/assets/fox.png' />
+            <img id='foxIMG' src={foxPNG} />
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email Address</Form.Label>
